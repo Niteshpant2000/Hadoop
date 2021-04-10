@@ -14,17 +14,17 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class WordCountDriver {
+public class FruitCountDriver {
 	public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException, URISyntaxException 
 	{
 		Configuration conf = new Configuration();
 		
 		Job j = new Job();
 		j.setJobName("My First Job");
-		j.setJarByClass(WordCountDriver.class );
-		j.setMapperClass(WordCountMapper.class );
+		j.setJarByClass(FruitCountDriver.class );
+		j.setMapperClass(FruitCountMapper.class );
 		
-		j.setReducerClass(WordCountReducer.class);
+		j.setReducerClass(FruitCountReducer.class);
 		
 		j.setOutputKeyClass(Text.class);
 		j.setOutputValueClass(IntWritable.class);
