@@ -10,7 +10,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-public class WordCountMapper extends Mapper<LongWritable,  Text, Text, IntWritable>
+public class FruitCountMapper extends Mapper<LongWritable,  Text, Text, IntWritable>
 
 {
 
